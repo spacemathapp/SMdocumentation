@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome!](README.md)
+* [SpaceMath v.2.0](README.md)
 * [Quick Start](quick-start.md)
 
 ## Reference
