@@ -1,128 +1,17 @@
-# Quick Start
+# Introduction
 
-{% hint style="info" %}
-**Good to know:** A quick start guide can be good to help folks get up and running with your API in a few steps. Some people prefer diving in with the basics rather than meticulously reading every page of documentation!
-{% endhint %}
+Our current knowledge of elementary particles and their interactions is based on solid theoretical foundations that are embodied in the Standard Model (SM). This theory provides a description of the weak, strong and electromagnetic interactions, satisfactorily explaining the experimental results, except for isolated exceptions. However, despite these achievements, there are phenomena that do not help us understand, for example: the problem of hierarchy, the origin of dark matter, the problem of flavor, etc. The fact that the SM cannot provide an answer to these phenomena suggests physics beyond the SM. In the last decades, several extensions of the SM have been presented to try to solve them, however this results in the emergence of free parameters that are not predicted by theory.
 
-## Get your API keys
+The search for physics Beyond the Standard Model (BSM) is necessarily a multidisciplinary effort, since the evidence for new physics could appear in physical observables that have been proposed both theoretically and experimentally. One strategy is to produce new hypothetical particles in colliders (for example, LHC and future stages of it), searching in decays and/or in high precision measurements. In this context, the reports by different collaborations have given exclusions on specific regions of the parameter space that, however, have been valuable so far. On the other hand, there have been many supposed signatures of new physics, often only to be refuted by the lack of correlated signals in other experiments. Properly and fully weighing the sum of data relevant to a theory and making rigorous statistical statements about which models are allowed and which are not, has become a challenging task for both theory and experiment.
 
-Your API requests are authenticated using API keys. Any request that doesn't include an API key will return an error.
+Secondly, with the discovery of the Higgs boson \[[1](broken-reference), [2](broken-reference)] is established that the Higgs mechanism explains the electroweak symmetry breaking and it generate the mass of all particles of the SM, omitting the neutrino masses. The SM is the most successful theory that explains many experimental results. However, it is well known that, despite its great success, the SM cannot help us to understand several issues, it encourages the study of SM extensions \[[3](broken-reference)–[18](broken-reference)], with the aim of solving some issue unexplained. The price to pay is the emergence of free parameters whose values are not predicted by the theory. From a phenomenological point of view, one frequently encounters these free parameters which should be constrained in some way, but at same time, motivated and allowed by experimental measurements or by theoretical restrictions. With the SpaceMath package, it is possible to do it. Free model parameter spaces can be constrained automatically within a friendly interface and an intuitive environment, where the user defines the couplings and executing the SpaceMath commands generates plots and tables showing the areas and numerical values according to experimental data, respectively, for the free BSM parameters. Similar packages to SpaceMath are shown in Table and can be consulted in the Refs. \[[19–25](broken-reference)].
 
-You can generate an API key from your Dashboard at any time.
+<table><thead><tr><th width="149">Software</th><th width="509">Features</th><th width="229">Library Dependencies</th><th width="325">Memory requirements (RAM)</th><th width="191">Required user level</th><th width="164">Execution mode</th></tr></thead><tbody><tr><td>GAMBIT 2.1</td><td><ul><li>Large database of models, SUSY and others</li><li>Extensive library of observables</li><li>Tools for simple interfacing with external codes</li><li>Massively parallel, both OpenMP and MPI</li><li>Easy to add new models, observables, likelihoods, and scanners</li></ul></td><td><ul><li>g++/gfortran 5.1 or greater</li><li>Cmake 2.8.12 or greater</li><li>Python 2.7 or greater</li><li>Python modules and Git</li><li>Boost 1.48 or greater</li><li>GSL 2.1 or greater</li><li>Eigen 3.1.0 or greater</li><li>LAPACK</li><li>pkg-config</li></ul></td><td><ul><li>Require more than 20 GB</li><li>Release mode is only intended for performance-critical applications, such as when running on supercomputer architectures.</li><li>It is not advised for laptops.</li></ul></td><td>Advanced user</td><td>Terminal</td></tr><tr><td>HEPfit 1.0</td><td><p>HEPfit is a flexible open-source tool which, given the Standard Model or any of its extensions, allows to</p><ul><li>fit the model parameters to a given set of experimental observables; </li><li>obtain predictions for observables.</li></ul></td><td><ul><li>CMake</li><li>GSL</li><li>ROOT v5 or greater</li><li>BOOST</li><li>MPI (optional)</li><li>BAT v1.0</li></ul></td><td>Minimum 4 Gb.</td><td>Intermediate user</td><td>Terminal</td></tr><tr><td>Gfitter 2.2</td><td><ul><li>Gfitter consists of abstract object-oriented code in C++ using ROOT functionality. </li><li>Tools for the handling of the data, the fitting, and statistical analyses are provided by a core package, where theoretical errors, correlations, and interparameter dependencies are consistently dealt with.</li></ul></td><td><ul><li>GCC 4.7 or 5.3</li><li>ROOT 6.06/01</li></ul></td><td>Minimum 4 Gb.</td><td>Intermediate user</td><td>Terminal</td></tr><tr><td>ScannerS 2.0</td><td><ul><li>ScannerS performs parameter scans and checks parameter points in theories BSM with extended scalar sectors.</li><li>Incorporates theoretical and experimental constraints from many different sources in order to judge whether a parameter point is allowed or excluded at approximately 95 % CL.</li></ul></td><td><ul><li>gcc-7 or newer</li><li>CMake 3.11</li><li>Eigen3</li><li>GSL</li></ul></td><td><ul><li>It requires at least 8 Gb or more depending on the number of points to be calculated.</li></ul></td><td>Intermediate user</td><td>Terminal</td></tr><tr><td>EasyScan_HEP 0.1.0</td><td><p>EasyScan HEP is a tool for connecting programs to scan parameter space of high energy physics models using various sampling algorithms. </p><ul><li>It allows one to set parameters for scan algorithm.</li><li>Connect different programs that calculate physical quantities.</li><li>Apply constraints in one user-readable configuration file.</li></ul></td><td><ul><li>Python3 with dependencies on numpy, scipy and ConfigParser libraries.</li><li>Optionally:matplotlib, pandas and pymultinest libraries.</li></ul></td><td>4 Gb.</td><td>Intermediate user</td><td>Terminal</td></tr><tr><td>CheckMATE</td><td>CheckMATE is a program that allows models of new physics to be easily tested against the recent LHC data.</td><td><ul><li>Python 2.7</li><li>ROOT</li><li>Delphes</li><li>Optional Packages: Pythia 8, MadGraph5 aMC@NLO and HepMC.</li></ul></td><td>At least 4 Gb.</td><td>Intermediate user</td><td>Terminal</td></tr><tr><td>HDECAY</td><td><p>HDECAY is a program that determines: </p><ul><li>The partial decay widths and branching ratios of the Higgs bosons within the Standard Model with three and four generations of fermions.</li><li>It addresses all decay channels including the dominant higher-order effects such as radiative corrections and multi-body channels.</li></ul></td><td><ul><li>Fortran</li></ul></td><td>Minimum 4 Gb.</td><td>Intermediate user</td><td>Terminal</td></tr></tbody></table>
 
-## Install the library
+However, SpaceMath has the feature that it only requires the installation of Mathematica Wolfram (available in many universities and research institutes) and a basic level user to be used, since at this stage of SpaceMath development its purpose is pedagogical. Unlike other programs that require prior knowledge of programming languages (see Table 1), the SpaceMath package has a fast learning curve and a practical approach which makes it a better option for quick results. In this first version of SpaceMath, LHC Higgs boson data (HBD) and expected results at HL-LHC, HE-LHC are included:
 
-The best way to interact with our API is to use one of our official libraries:
+1. Higgs boson data
 
-{% tabs %}
-{% tab title="Node" %}
-```
-# Install via NPM
-npm install --save my-api
-```
-{% endtab %}
+&#x20; (a) Signal strength modifiers $$\mathcal{R}_X$$
 
-{% tab title="Python" %}
-```
-# Install via pip
-pip install --upgrade myapi
-```
-{% endtab %}
-{% endtabs %}
-
-{% hint style="info" %}
-**Good to know:** Using tabs to separate out different languages is a great way to present technical examples or code documentation without cramming your docs with extra sections or pages per language.
-{% endhint %}
-
-## Make your first request
-
-To make your first request, send an authenticated request to the pets endpoint. This will create a `pet`, which is nice.
-
-{% swagger baseUrl="https://api.myapi.com/v1" method="post" path="/pet" summary="Create pet." %}
-{% swagger-description %}
-Creates a new pet.
-{% endswagger-description %}
-
-{% swagger-parameter in="body" name="name" required="true" type="string" %}
-The name of the pet
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="owner_id" required="false" type="string" %}
-The 
-
-`id`
-
- of the user who owns the pet
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="species" required="false" type="string" %}
-The species of the pet
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="breed" required="false" type="string" %}
-The breed of the pet
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="Pet successfully created" %}
-```javascript
-{
-    "name"="Wilson",
-    "owner": {
-        "id": "sha7891bikojbkreuy",
-        "name": "Samuel Passet",
-    "species": "Dog",}
-    "breed": "Golden Retriever",
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="401" description="Permission denied" %}
-
-{% endswagger-response %}
-{% endswagger %}
-
-{% hint style="info" %}
-**Good to know:** You can use the API Method block to fully document an API method. You can also sync your API blocks with an OpenAPI file or URL to auto-populate them.
-{% endhint %}
-
-Take a look at how you might call this method using our official libraries, or via `curl`:
-
-{% tabs %}
-{% tab title="curl" %}
-```
-curl https://api.myapi.com/v1/pet  
-    -u YOUR_API_KEY:  
-    -d name='Wilson'  
-    -d species='dog'  
-    -d owner_id='sha7891bikojbkreuy'  
-```
-{% endtab %}
-
-{% tab title="Node" %}
-```javascript
-// require the myapi module and set it up with your API key
-const myapi = require('myapi')(YOUR_API_KEY);
-
-const newPet = away myapi.pet.create({
-    name: 'Wilson',
-    owner_id: 'sha7891bikojbkreuy',
-    species: 'Dog',
-    breed: 'Golden Retriever',
-})
-```
-{% endtab %}
-
-{% tab title="Python" %}
-```python
-// Set your API key before making the request
-myapi.api_key = YOUR_API_KEY
-
-myapi.Pet.create(
-    name='Wilson',
-    owner_id='sha7891bikojbkreuy',
-    species='Dog',
-    breed='Golden Retriever',
-)
-```
-{% endtab %}
-{% endtabs %}
+&#x20; (b) Higgs boson coupling modifiers $$\kappa_i$$
