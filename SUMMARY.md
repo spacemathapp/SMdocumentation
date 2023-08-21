@@ -1,12 +1,13 @@
 # Table of contents
 
-* [SpaceMath](README.md)
-* [Quick Start](quick-start.md)
-* [Lepton Flavor violating processes](lepton-flavor-violating-processes.md)
-* [Copy of Quick Start](copy-of-quick-start.md)
+* [📓 SpaceMath](README.md)
+  * [Introduction](spacemath/introduction.md)
+  * [Installation](spacemath/installation.md)
+  * [First steps](spacemath/first-steps.md)
+  * [Validation](spacemath/validation.md)
 
-## Reference
+## 🌀 SpaceMath v.1.5
 
-* [API Reference](reference/api-reference/README.md)
-  * [Pets](reference/api-reference/pets.md)
-  * [Users](reference/api-reference/users.md)
+* [News Features](spacemath-v.1.5/news-features/README.md)
+  * [Friendly Mode](spacemath-v.1.5/news-features/friendly-mode.md)
+  * [Expert Mode](spacemath-v.1.5/news-features/expert-mode.md)
