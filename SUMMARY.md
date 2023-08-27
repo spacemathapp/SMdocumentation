@@ -1,7 +1,8 @@
 # Table of contents
 
 * [📓 SpaceMath](README.md)
-  * [Introduction](spacemath/introduction.md)
+  * [Introduction](spacemath/introduction/README.md)
+    * [LHC Higgs boson data](spacemath/introduction/lhc-higgs-boson-data.md)
   * [Installation](spacemath/installation.md)
   * [First steps](spacemath/first-steps.md)
   * [Validation](spacemath/validation.md)
