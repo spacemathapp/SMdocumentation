@@ -10,12 +10,12 @@
   * [Validation](spacemath/validation.md)
   * [References](spacemath/references.md)
 
-## 🌀 SpaceMath v.1.5
+## 🌀 SpaceMath v.2.0
 
-* [RELEASE 2. PREVIEWS](spacemath-v.1.5/release-2.-previews/README.md)
-  * [News Features](spacemath-v.1.5/release-2.-previews/news-features/README.md)
-    * [Friendly Mode](spacemath-v.1.5/release-2.-previews/news-features/friendly-mode.md)
-    * [Expert Mode](spacemath-v.1.5/release-2.-previews/news-features/expert-mode.md)
+* [RELEASE 2. PREVIEWS](spacemath-v.2.0/release-2.-previews/README.md)
+  * [News Features](spacemath-v.2.0/release-2.-previews/news-features/README.md)
+    * [Friendly Mode](spacemath-v.2.0/release-2.-previews/news-features/friendly-mode.md)
+    * [Expert Mode](spacemath-v.2.0/release-2.-previews/news-features/expert-mode.md)
 
 ***
 
